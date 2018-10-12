@@ -1,3 +1,21 @@
+var dummyLocation = {
+    latitude: 48.249586,
+    longitude: 11.634431,
+    what3words: "shelf.jetted.purple"
+};
+
+var dummyMessage = {
+    createdBy: dummyLocation.what3words,
+    latitude: dummyLocation.latitude,
+    longitude: dummyLocation.longitude,
+    createdOn: new Date(), //now
+    expiresOn: new Date(Date.now() + 15 * 60 * 1000),
+    // mins * secs * msecs
+// set text
+    text: "test, I am a dummy",
+// own message
+    own: true
+};
 
 var yummy = {
     name: "#Yummy",
@@ -6,7 +24,7 @@ var yummy = {
     starred: false,
     expiresIn: 100,
     messageCount: 999,
-    messages : []           // #10 #message s property in #chl object
+    messages : [dummyMessage]           // #10 #message s property in #chl object
 };
 
 var sevencontinents = {
@@ -16,7 +34,7 @@ var sevencontinents = {
     starred: true,
     expiresIn: 60,
     messageCount: 5,
-    messages : []           // #10 #message s property in #chl object
+    messages : [dummyMessage]           // #10 #message s property in #chl object
 
 };
 
@@ -27,7 +45,7 @@ var killerapp = {
     starred: false,
     expiresIn: 1,
     messageCount: 10351,
-    messages : []           // #10 #message s property in #chl object
+    messages : [dummyMessage]           // #10 #message s property in #chl object
 
 };
 
@@ -38,7 +56,7 @@ var firstpersononmars = {
     starred: true,
     expiresIn: 30003,
     messageCount: 2424,
-    messages : []           // #10 #message s property in #chl object
+    messages : [dummyMessage]           // #10 #message s property in #chl object
 
 };
 
@@ -49,6 +67,6 @@ var octoberfest = {
     starred: false,
     expiresIn: 60,
     messageCount: 321,
-    messages : []           // #10 #message s property in #chl object
+    messages : [dummyMessage]           // #10 #message s property in #chl object
 
 };
